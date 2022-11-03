@@ -1,0 +1,19 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <AssemblyName>Fancy.Schema</AssemblyName>
+    <RootNamespace>Fancy.Schema</RootNamespace>
+    <Version>0.1.0</Version>
+    <Authors>harriszhang@live.cn</Authors>
+    <Company>harriszhang@live.cn</Company>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <DocumentationFile>bin\$(Configuration)\Fancy.Schema.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Panosen.Language" Version="1.1.0" />
+    <PackageReference Include="Panosen.Text.Extension" Version="1.0.0" />
+  </ItemGroup>
+
+</Project>
