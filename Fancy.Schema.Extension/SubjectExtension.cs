@@ -5,7 +5,7 @@ namespace Fancy.Schema
     /// <summary>
     /// SubjectExtension
     /// </summary>
-    public static class SubjectExtension
+    public static partial class SubjectExtension
     {
         /// <summary>
         /// SetName

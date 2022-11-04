@@ -4,6 +4,9 @@ using System.Text;
 
 namespace Fancy.Schema
 {
+    /// <summary>
+    /// 主体名称扩展
+    /// </summary>
     public static partial class SubjectExtension
     {
 
@@ -31,51 +34,27 @@ namespace Fancy.Schema
 
         #endregion
 
-        #region FetchSubjectBasic
+        #region FetchSubject
 
         /// <summary>
-        /// FetchSubjectBasic
+        /// FetchSubject
         /// </summary>
-        public static string FetchSubjectBasic(this Subject subject) { return $"Fetch{subject.Name}Basic"; }
+        public static string FetchSubject(this Subject subject) { return $"Fetch{subject.Name}"; }
 
         /// <summary>
-        /// FetchSubjectBasicService
+        /// FetchSubjectService
         /// </summary>
-        public static string FetchSubjectBasicService(this Subject subject) { return $"{subject.FetchSubjectBasic()}Service"; }
+        public static string FetchSubjectService(this Subject subject) { return $"{subject.FetchSubject()}Service"; }
 
         /// <summary>
-        /// FetchSubjectBasicRequest
+        /// FetchSubjectRequest
         /// </summary>
-        public static string FetchSubjectBasicRequest(this Subject subject) { return $"{subject.FetchSubjectBasic()}Request"; }
+        public static string FetchSubjectRequest(this Subject subject) { return $"{subject.FetchSubject()}Request"; }
 
         /// <summary>
-        /// FetchSubjectBasicResponse
+        /// FetchSubjectResponse
         /// </summary>
-        public static string FetchSubjectBasicResponse(this Subject subject) { return $"{subject.FetchSubjectBasic()}Response"; }
-
-        #endregion
-
-        #region FetchSubjectItem
-
-        /// <summary>
-        /// FetchSubjectItem
-        /// </summary>
-        public static string FetchSubjectItem(this Subject subject) { return $"Fetch{subject.Name}Item"; }
-
-        /// <summary>
-        /// FetchSubjectItemService
-        /// </summary>
-        public static string FetchSubjectItemService(this Subject subject) { return $"{subject.FetchSubjectItem()}Service"; }
-
-        /// <summary>
-        /// FetchSubjectItemRequest
-        /// </summary>
-        public static string FetchSubjectItemRequest(this Subject subject) { return $"{subject.FetchSubjectItem()}Request"; }
-
-        /// <summary>
-        /// FetchSubjectItemResponse
-        /// </summary>
-        public static string FetchSubjectItemResponse(this Subject subject) { return $"{subject.FetchSubjectItem()}Response"; }
+        public static string FetchSubjectResponse(this Subject subject) { return $"{subject.FetchSubject()}Response"; }
 
         #endregion
 
@@ -172,6 +151,54 @@ namespace Fancy.Schema
         /// EnableSubjectResponse
         /// </summary>
         public static string EnableSubjectResponse(this Subject subject) { return $"{subject.EnableSubject()}Response"; }
+
+        #endregion
+
+        #region LockSubject
+
+        /// <summary>
+        /// LockSubject
+        /// </summary>
+        public static string LockSubject(this Subject subject) { return $"Lock{subject.Name}"; }
+
+        /// <summary>
+        /// LockSubjectService
+        /// </summary>
+        public static string LockSubjectService(this Subject subject) { return $"{subject.LockSubject()}Service"; }
+
+        /// <summary>
+        /// LockSubjectRequest
+        /// </summary>
+        public static string LockSubjectRequest(this Subject subject) { return $"{subject.LockSubject()}Request"; }
+
+        /// <summary>
+        /// LockSubjectResponse
+        /// </summary>
+        public static string LockSubjectResponse(this Subject subject) { return $"{subject.LockSubject()}Response"; }
+
+        #endregion
+
+        #region UnlockSubject
+
+        /// <summary>
+        /// UnlockSubject
+        /// </summary>
+        public static string UnlockSubject(this Subject subject) { return $"Unlock{subject.Name}"; }
+
+        /// <summary>
+        /// UnlockSubjectService
+        /// </summary>
+        public static string UnlockSubjectService(this Subject subject) { return $"{subject.UnlockSubject()}Service"; }
+
+        /// <summary>
+        /// UnlockSubjectRequest
+        /// </summary>
+        public static string UnlockSubjectRequest(this Subject subject) { return $"{subject.UnlockSubject()}Request"; }
+
+        /// <summary>
+        /// UnlockSubjectResponse
+        /// </summary>
+        public static string UnlockSubjectResponse(this Subject subject) { return $"{subject.UnlockSubject()}Response"; }
 
         #endregion
 
