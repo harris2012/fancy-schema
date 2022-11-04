@@ -202,6 +202,35 @@ namespace Fancy.Schema
 
         #endregion
 
+        #region UpdateSubject
+
+        /// <summary>
+        /// UpdateSubjectPosition
+        /// </summary>
+        public static string UpdateSubjectPosition(this Subject subject) { return $"Update{subject.Name}"; }
+
+        /// <summary>
+        /// UpdateSubjectPositionService
+        /// </summary>
+        public static string UpdateSubjectPositionService(this Subject subject) { return $"{subject.UpdateSubjectPosition()}Service"; }
+
+        /// <summary>
+        /// UpdateSubjectPositionRequest
+        /// </summary>
+        public static string UpdateSubjectPositionRequest(this Subject subject) { return $"{subject.UpdateSubjectPosition()}Request"; }
+
+        /// <summary>
+        /// UpdateSubjectPositionResponse
+        /// </summary>
+        public static string UpdateSubjectPositionResponse(this Subject subject) { return $"{subject.UpdateSubjectPosition()}Response"; }
+
+        #endregion
+
+        /// <summary>
+        /// SubjectConvertor
+        /// </summary>
+        public static string SubjectConvertor(this Subject subject) { return $"{subject.Name}Convertor"; }
+
 
         /*
 
