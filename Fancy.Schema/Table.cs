@@ -17,9 +17,14 @@ namespace Fancy.Schema
         public string Name { get; set; }
 
         /// <summary>
-        /// 显示名称
+        /// 真实名称
         /// </summary>
-        public string DisplayName { get; set; }
+        public string RealName { get; set; }
+
+        /// <summary>
+        /// 注释
+        /// </summary>
+        public string Comment { get; set; }
 
         /// <summary>
         /// 属性字典

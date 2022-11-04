@@ -12,6 +12,6 @@ namespace Fancy.Schema
         /// <summary>
         /// TableEntity
         /// </summary>
-        public static string TableEntity(this Table table) { return $"{table.Name}Entity"; }
+        public static string TableEntity(this Table table) { return $"{table.Name.ToUpperCamelCase()}Entity"; }
     }
 }

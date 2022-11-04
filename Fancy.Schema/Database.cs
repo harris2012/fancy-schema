@@ -7,9 +7,9 @@ using System.Threading.Tasks;
 namespace Fancy.Schema
 {
     /// <summary>
-    /// 字段
+    /// 数据库
     /// </summary>
-    public class Field
+    public class Database
     {
         /// <summary>
         /// 名称
@@ -22,8 +22,8 @@ namespace Fancy.Schema
         public string RealName { get; set; }
 
         /// <summary>
-        /// 显示名称
+        /// 数据表
         /// </summary>
-        public string Comment { get; set; }
+        public Dictionary<string, Table> TableMap { get; set; }
     }
 }
