@@ -1,9 +1,9 @@
-﻿using Savory.Canos.Template;
+﻿using Fancy.Schema;
 using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace Savory.Canos.Template
+namespace Fancy.Schema
 {
     /// <summary>
     /// CanosParam

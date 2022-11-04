@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Savory.Canos.Template
+namespace Fancy.Schema
 {
     public static partial class SubjectExtension
     {
