@@ -9,12 +9,12 @@ namespace Savory.Canos.Template
     /// <summary>
     /// 级联
     /// </summary>
-    public class Cascade : SimpleObject
+    public class Cascade
     {
         /// <summary>
-        /// Cascade
+        /// Name
         /// </summary>
-        public override SimpleObjectType SimpleObjectType => SimpleObjectType.Cascade;
+        public string Name { get; set; }
 
         /// <summary>
         /// 级联项

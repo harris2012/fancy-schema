@@ -10,12 +10,12 @@ namespace Savory.Canos.Template
     /// <summary>
     /// 元数据
     /// </summary>
-    public class Metadata : SimpleObject
+    public class Metadata
     {
         /// <summary>
-        /// SimpleObjectType
+        /// Name
         /// </summary>
-        public override SimpleObjectType SimpleObjectType => SimpleObjectType.Metadata;
+        public string Name { get; set; }
 
         /// <summary>
         /// 元数据类型

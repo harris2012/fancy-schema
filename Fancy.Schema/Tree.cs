@@ -9,12 +9,12 @@ namespace Savory.Canos.Template
     /// <summary>
     /// 级联
     /// </summary>
-    public class Tree : SimpleObject
+    public class Tree
     {
         /// <summary>
-        /// Tree
+        /// Name
         /// </summary>
-        public override SimpleObjectType SimpleObjectType => SimpleObjectType.Tree;
+        public string Name { get; set; }
 
         /// <summary>
         /// 级联项来源主体

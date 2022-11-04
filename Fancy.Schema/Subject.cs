@@ -9,12 +9,12 @@ namespace Savory.Canos.Template
     /// <summary>
     /// 主体
     /// </summary>
-    public class Subject : SimpleObject
+    public class Subject
     {
         /// <summary>
-        /// Subject
+        /// Name
         /// </summary>
-        public override SimpleObjectType SimpleObjectType => SimpleObjectType.Subject;
+        public string Name { get; set; }
 
         /// <summary>
         /// 显示名称
