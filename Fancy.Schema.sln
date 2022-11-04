@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.31624.102
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32630.192
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Fancy.Schema", "Fancy.Schema\Fancy.Schema.csproj", "{C3DEACA3-9C68-4BFE-93F4-93D07B0D349F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fancy.Schema.Extension", "Fancy.Schema.Extension\Fancy.Schema.Extension.csproj", "{F25DF03B-081E-4538-9643-EF89D2A758DB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{C3DEACA3-9C68-4BFE-93F4-93D07B0D349F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C3DEACA3-9C68-4BFE-93F4-93D07B0D349F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C3DEACA3-9C68-4BFE-93F4-93D07B0D349F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F25DF03B-081E-4538-9643-EF89D2A758DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F25DF03B-081E-4538-9643-EF89D2A758DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F25DF03B-081E-4538-9643-EF89D2A758DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F25DF03B-081E-4538-9643-EF89D2A758DB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>netstandard2.0</TargetFramework>
+        <AssemblyName>Fancy.Schema.Extension</AssemblyName>
+        <RootNamespace>Fancy.Schema</RootNamespace>
+        <Version>0.1.0</Version>
+        <Authors>harriszhang@live.cn</Authors>
+        <Company>harriszhang@live.cn</Company>
+        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+        <DocumentationFile>bin\$(Configuration)\Fancy.Schema.Extension.xml</DocumentationFile>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\Fancy.Schema\Fancy.Schema.csproj" />
+    </ItemGroup>
+
+</Project>
