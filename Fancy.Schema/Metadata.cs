@@ -1,5 +1,4 @@
-﻿using Panosen.Language;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -45,7 +44,7 @@ namespace Fancy.Schema
         /// <summary>
         /// MetaKey的类型
         /// </summary>
-        public ProgramType ProgramType { get; set; }
+        public MetaPropertyType PropertyType { get; set; }
 
         /// <summary>
         /// 来源主体的名称
@@ -140,12 +139,12 @@ namespace Fancy.Schema
         }
 
         /// <summary>
-        /// SetProgramType
+        /// SetPropertyType
         /// </summary>
-        public static TMetadata SetProgramType<TMetadata>(this TMetadata metadata, ProgramType programType)
+        public static TMetadata SetPropertyType<TMetadata>(this TMetadata metadata, MetaPropertyType propertyType)
             where TMetadata : Metadata
         {
-            metadata.ProgramType = programType;
+            metadata.PropertyType = propertyType;
 
             return metadata;
         }

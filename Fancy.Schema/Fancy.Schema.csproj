@@ -12,7 +12,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Panosen.Language" Version="1.1.0" />
     <PackageReference Include="Panosen.Text.Extension" Version="1.0.0" />
   </ItemGroup>
 

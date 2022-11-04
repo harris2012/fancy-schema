@@ -1,5 +1,4 @@
-﻿using Panosen.Language;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -30,7 +29,7 @@ namespace Fancy.Schema
         /// <summary>
         /// 通用编程语言类型
         /// </summary>
-        public ProgramType ProgramType { get; set; }
+        public MetaPropertyType PropertyType { get; set; }
 
         /// <summary>
         /// 元数据名称
@@ -66,11 +65,6 @@ namespace Fancy.Schema
         /// 自增长
         /// </summary>
         public bool AutoIncrement { get; set; }
-
-        /// <summary>
-        /// 特殊功能
-        /// </summary>
-        public PropertyAs PropertyAs { get; set; }
     }
 
     /// <summary>
@@ -112,12 +106,12 @@ namespace Fancy.Schema
         }
 
         /// <summary>
-        /// SetProgramType
+        /// SetPropertyType
         /// </summary>
-        public static TProperty SetProgramType<TProperty>(this TProperty property, ProgramType programType)
+        public static TProperty SetPropertyType<TProperty>(this TProperty property, MetaPropertyType propertyType)
             where TProperty : Property
         {
-            property.ProgramType = programType;
+            property.PropertyType = propertyType;
 
             return property;
         }
@@ -184,33 +178,6 @@ namespace Fancy.Schema
             where TProperty : Property
         {
             property.AutoIncrement = autoIncrement;
-
-            return property;
-        }
-
-        /// <summary>
-        /// SetAs
-        /// </summary>
-        public static TProperty SetAs<TProperty>(this TProperty property, string propertyAs)
-            where TProperty : Property
-        {
-            switch (propertyAs)
-            {
-                case "DataStatus":
-                    property.PropertyAs = PropertyAs.DataStatus;
-                    break;
-                case "Position":
-                    property.PropertyAs = PropertyAs.Position;
-                    break;
-                case "CreateTime":
-                    property.PropertyAs = PropertyAs.CreateTime;
-                    break;
-                case "LastUpdateTime":
-                    property.PropertyAs = PropertyAs.LastUpdateTime;
-                    break;
-                default:
-                    break;
-            }
 
             return property;
         }

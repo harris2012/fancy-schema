@@ -24,7 +24,7 @@ namespace Fancy.Schema
         /// <summary>
         /// 编程类型
         /// </summary>
-        public string ProgramType { get; set; }
+        public string PropertyType { get; set; }
 
         /// <summary>
         /// 备注
