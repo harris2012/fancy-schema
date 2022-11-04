@@ -25,5 +25,10 @@ namespace Fancy.Schema
         /// 属性字典
         /// </summary>
         public Dictionary<string, Property> PropertyMap { get; set; }
+
+        /// <summary>
+        /// 关联的数据数据库
+        /// </summary>
+        public List<string> RelativeDatabaseList { get; set; }
     }
 }
