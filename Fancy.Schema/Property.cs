@@ -7,9 +7,9 @@ using System.Threading.Tasks;
 namespace Fancy.Schema
 {
     /// <summary>
-    /// 项目
+    /// 属性
     /// </summary>
-    public class Project
+    public class Property
     {
         /// <summary>
         /// 名称
@@ -17,8 +17,13 @@ namespace Fancy.Schema
         public string Name { get; set; }
 
         /// <summary>
-        /// 标题
+        /// 显示名称
         /// </summary>
-        public string Title { get; set; }
+        public string DisplayName { get; set; }
+
+        /// <summary>
+        /// 通用编程语言类型
+        /// </summary>
+        public MetaPropertyType PropertyType { get; set; }
     }
 }
