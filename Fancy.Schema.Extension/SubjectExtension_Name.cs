@@ -207,7 +207,7 @@ namespace Fancy.Schema
         /// <summary>
         /// UpdateSubjectPosition
         /// </summary>
-        public static string UpdateSubjectPosition(this Subject subject) { return $"Update{subject.Name}"; }
+        public static string UpdateSubjectPosition(this Subject subject) { return $"Update{subject.Name}Position"; }
 
         /// <summary>
         /// UpdateSubjectPositionService
