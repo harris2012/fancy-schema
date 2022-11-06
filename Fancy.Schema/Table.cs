@@ -29,6 +29,6 @@ namespace Fancy.Schema
         /// <summary>
         /// 属性字典
         /// </summary>
-        public Dictionary<string, Field> FieldMap { get; set; }
+        public List<string> FieldList { get; set; }
     }
 }

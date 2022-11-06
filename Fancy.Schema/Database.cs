@@ -24,6 +24,6 @@ namespace Fancy.Schema
         /// <summary>
         /// 数据表
         /// </summary>
-        public Dictionary<string, Table> TableMap { get; set; }
+        public List<string> TableList { get; set; }
     }
 }

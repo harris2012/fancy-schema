@@ -1,4 +1,4 @@
-﻿using System;
+﻿ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -30,5 +30,11 @@ namespace Fancy.Schema
         /// 关联的数据数据库
         /// </summary>
         public List<string> RelativeDatabaseList { get; set; }
+
+        /// <summary>
+        /// 关联的数据表
+        /// </summary>
+        public List<string> RelatedTableList { get; set; }
+
     }
 }
