@@ -24,7 +24,7 @@ namespace Fancy.Schema
         /// <summary>
         /// 属性字典
         /// </summary>
-        public Dictionary<string, Property> PropertyMap { get; set; }
+        public List<string> PropertyList { get; set; }
 
         /// <summary>
         /// 关联的数据数据库
