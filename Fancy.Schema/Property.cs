@@ -24,6 +24,11 @@ namespace Fancy.Schema
         /// <summary>
         /// 通用编程语言类型
         /// </summary>
-        public MetaPropertyType PropertyType { get; set; }
+        public string PropertyType { get; set; }
+
+        /// <summary>
+        /// 关联的数据库字段
+        /// </summary>
+        public string RelativeField { get; set; }
     }
 }

@@ -25,5 +25,20 @@ namespace Fancy.Schema
         /// 显示名称
         /// </summary>
         public string Comment { get; set; }
+
+        /// <summary>
+        /// 字段所属的表
+        /// </summary>
+        public string Table { get; set; }
+
+        /// <summary>
+        /// 不带长度的数据类型
+        /// </summary>
+        public string DataType { get; set; }
+
+        /// <summary>
+        /// .net数据类型
+        /// </summary>
+        public string CSharpType { get; set; }
     }
 }

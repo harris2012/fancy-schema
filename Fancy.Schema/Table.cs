@@ -27,6 +27,11 @@ namespace Fancy.Schema
         public string Comment { get; set; }
 
         /// <summary>
+        /// 表所属的数据库
+        /// </summary>
+        public string Database { get; set; }
+
+        /// <summary>
         /// 属性字典
         /// </summary>
         public List<string> FieldList { get; set; }

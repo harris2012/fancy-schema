@@ -26,16 +26,5 @@
 
             return property;
         }
-
-        /// <summary>
-        /// SetPropertyType
-        /// </summary>
-        public static TProperty SetPropertyType<TProperty>(this TProperty property, MetaPropertyType propertyType)
-            where TProperty : Property
-        {
-            property.PropertyType = propertyType;
-
-            return property;
-        }
     }
 }
