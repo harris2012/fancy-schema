@@ -16,5 +16,13 @@ namespace Fancy.Schema
         {
             return $"{database.Name}Context";
         }
+
+        /// <summary>
+        /// DatabaseTransaciton
+        /// </summary>
+        public static string DatabaseTransaciton(this Database database)
+        {
+            return $"{database.Name}Transaciton";
+        }
     }
 }
