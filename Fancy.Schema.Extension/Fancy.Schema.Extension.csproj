@@ -4,7 +4,7 @@
         <TargetFramework>netstandard2.0</TargetFramework>
         <AssemblyName>Fancy.Schema.Extension</AssemblyName>
         <RootNamespace>Fancy.Schema</RootNamespace>
-        <Version>0.2.5</Version>
+        <Version>0.2.12</Version>
         <Authors>harriszhang@live.cn</Authors>
         <Company>harriszhang@live.cn</Company>
         <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
@@ -12,7 +12,7 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\Fancy.Schema\Fancy.Schema.csproj" />
+        <ProjectReference Include="..\Fancy.Schema\Fancy.Schema.csproj" />
     </ItemGroup>
 
 </Project>

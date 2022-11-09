@@ -32,7 +32,17 @@ namespace Fancy.Schema
         public string Database { get; set; }
 
         /// <summary>
-        /// 属性字典
+        /// 主键
+        /// </summary>
+        public bool PrimaryKey { get; set; }
+
+        /// <summary>
+        /// 关联到主表的外键
+        /// </summary>
+        public string ReferenceKey { get; set; }
+
+        /// <summary>
+        /// 字段
         /// </summary>
         public List<string> FieldList { get; set; }
     }
