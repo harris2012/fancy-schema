@@ -18,11 +18,11 @@ namespace Fancy.Schema
         }
 
         /// <summary>
-        /// DatabaseTransaciton
+        /// DatabaseTransaction
         /// </summary>
-        public static string DatabaseTransaciton(this Database database)
+        public static string DatabaseTransaction(this Database database)
         {
-            return $"{database.Name}Transaciton";
+            return $"{database.Name}Transaction";
         }
     }
 }
