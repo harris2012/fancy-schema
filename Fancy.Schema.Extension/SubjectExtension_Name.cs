@@ -82,6 +82,30 @@ namespace Fancy.Schema
 
         #endregion
 
+        #region FetchSubjectCount
+
+        /// <summary>
+        /// FetchSubjectCount
+        /// </summary>
+        public static string FetchSubjectCount(this Subject subject) { return $"Fetch{subject.Name}Count"; }
+
+        /// <summary>
+        /// FetchSubjectCountService
+        /// </summary>
+        public static string FetchSubjectCountService(this Subject subject) { return $"{subject.FetchSubjectCount()}Service"; }
+
+        /// <summary>
+        /// FetchSubjectCountRequest
+        /// </summary>
+        public static string FetchSubjectCountRequest(this Subject subject) { return $"{subject.FetchSubjectCount()}Request"; }
+
+        /// <summary>
+        /// FetchSubjectCountResponse
+        /// </summary>
+        public static string FetchSubjectCountResponse(this Subject subject) { return $"{subject.FetchSubjectCount()}Response"; }
+
+        #endregion
+
         #region UpdateSubject
 
         /// <summary>
