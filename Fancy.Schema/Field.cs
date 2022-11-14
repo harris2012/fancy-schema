@@ -40,5 +40,10 @@ namespace Fancy.Schema
         /// .net数据类型
         /// </summary>
         public string CSharpType { get; set; }
+
+        /// <summary>
+        /// 自增长
+        /// </summary>
+        public bool AutoIncrement { get; set; }
     }
 }

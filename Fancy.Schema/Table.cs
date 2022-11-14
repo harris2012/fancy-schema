@@ -34,7 +34,7 @@ namespace Fancy.Schema
         /// <summary>
         /// 主键
         /// </summary>
-        public bool PrimaryKey { get; set; }
+        public string PrimaryKey { get; set; }
 
         /// <summary>
         /// 关联到主表的外键

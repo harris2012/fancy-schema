@@ -22,6 +22,11 @@ namespace Fancy.Schema
         public string DisplayName { get; set; }
 
         /// <summary>
+        /// 主属性
+        /// </summary>
+        public string PrimaryProperty { get; set; }
+
+        /// <summary>
         /// 属性字典
         /// </summary>
         public List<string> PropertyList { get; set; }
