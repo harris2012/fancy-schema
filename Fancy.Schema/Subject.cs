@@ -37,6 +37,11 @@ namespace Fancy.Schema
         public List<string> RelativeDatabaseList { get; set; }
 
         /// <summary>
+        /// 关联的数据表
+        /// </summary>
+        public List<string> RelativeTableList { get; set; }
+
+        /// <summary>
         /// 主数据库
         /// </summary>
         public string PrimaryDatabase { get; set; }
@@ -45,11 +50,6 @@ namespace Fancy.Schema
         /// 主表
         /// </summary>
         public string PrimaryTable { get; set; }
-
-        /// <summary>
-        /// 关联的数据表
-        /// </summary>
-        public List<string> RelativeTableList { get; set; }
 
     }
 }
