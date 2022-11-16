@@ -37,13 +37,13 @@ namespace Fancy.Schema
         public string PrimaryKey { get; set; }
 
         /// <summary>
-        /// 关联到主表的外键
-        /// </summary>
-        public string ReferenceKey { get; set; }
-
-        /// <summary>
         /// 字段
         /// </summary>
         public List<string> FieldList { get; set; }
+
+        /// <summary>
+        /// 关联的主体
+        /// </summary>
+        public string RelativeSubject { get; set; }
     }
 }
