@@ -37,6 +37,21 @@ namespace Fancy.Schema
         public string DataType { get; set; }
 
         /// <summary>
+        /// 最大长度
+        /// </summary>
+        public int MaxLength { get; set; }
+
+        /// <summary>
+        /// decimal digits length
+        /// </summary>
+        public int ScaleLength { get; set; }
+
+        /// <summary>
+        /// 带长度的数据类型
+        /// </summary>
+        public string ColumnType { get; set; }
+
+        /// <summary>
         /// .net数据类型
         /// </summary>
         public string CSharpType { get; set; }
